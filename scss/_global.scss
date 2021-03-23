@@ -1,0 +1,83 @@
+$primaryC:#828282;
+$color_2: #070707;
+$ff: "Gilroy-Bold";
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryC;
+}
+
+.container {
+    margin: auto;
+}
+
+.about,
+.portfolio,
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    background: #F6F6F6;
+}
+
+.title {
+    font-family: $ff;
+    font-size: 34px;
+    line-height: 42px;
+    color: $color_2;
+}
+
+.text {
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $primaryC;
+}
+
+.descriprion {
+    text-align: center;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color_2;
+}
+
+.rating {}
+
+.image {}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    font-style: normal;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("../fonts/Gilroy-Medium.ttf"), /* Если не получилось, загрузит woff2 */
+    url("../fonts/Gilroy-Medium.woff2") format("woff2"), /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("../fonts/Gilroy-Bold.ttf"), /* Если не получилось, загрузит woff2 */
+    url("../fonts/Gilroy-Bold.woff2") format("woff2"), /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+}
