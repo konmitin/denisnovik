@@ -1,6 +1,4 @@
 .header {
-    margin: auto;
-    max-width: 1024px;
     &__nav {
         position: relative;
         padding-top: 32px;
@@ -24,6 +22,9 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        @media (max-width: 658px) {
+            align-items: flex-start;
+        }
     }
     &__title {
         margin: 0;
@@ -31,6 +32,9 @@
         font-family: $ff;
         font-size: 48px;
         line-height: 59px;
+        @media (max-width: 658px) {
+            margin-bottom: 23px;
+        }
     }
     &__text {
         margin-bottom: 9px;
@@ -44,7 +48,6 @@
     }
     &__image {
         width: 100%;
-        min-height: 387px;
         height: auto;
     }
 }
@@ -62,6 +65,38 @@
         font-family: $ff;
         color: $color_2;
     }
+    @media (max-width: 475px) {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        visibility: hidden;
+        &__link {
+            font-size: 34px;
+            line-height: 42px;
+            margin-bottom: 68px;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.menu-burger {
+    display: none;
+    visibility: hidden;
+    @media (max-width: 475px) {
+        display: flex;
+        visibility: visible;
+        margin-top: 15px;
+    }
+}
+
+.info__body {
+    @media (max-width: 658px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
 
 .language {
@@ -78,5 +113,10 @@
         border-right: 3px solid $color_2;
         padding-right: 5px;
         margin-right: 5px;
+    }
+    @media (max-width: 658px) {
+        display: none;
+        visibility: hidden;
+        margin: 0;
     }
 }

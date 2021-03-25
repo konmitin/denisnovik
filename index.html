@@ -14,53 +14,69 @@
 
 <body>
 
-    <div class="container">
+    <div class="wrapper">
         <header class="header">
-            <div class="header__nav nav">
-                <a href="#" class="nav__link">Home</a>
-                <a href="#" class="nav__link">About me</a>
-                <a href="#" class="nav__link">Skills</a>
-                <a href="#" class="nav__link">Portfolio</a>
-                <a href="#" class="nav__link">Contacts</a>
-            </div>
-            <div class="header__primary">
-                <div class="header__info">
-                    <h1 class="header__title">
-                        Denis<br>Novik
-                    </h1>
-                    <span class="header__text">
-                        UX | UI designer <br>
-                        24 years old, Minsk
-                    </span>
-                    <div class="header__language language">
-                        <a href="#" class="language__link">RU</a>
-                        <a href="#" class="language__link">ENG</a>
-                    </div>
+            <div class="container">
+                <div class="header__nav nav">
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">About me</a>
+                    <a href="#" class="nav__link">Skills</a>
+                    <a href="#" class="nav__link">Portfolio</a>
+                    <a href="#" class="nav__link">Contacts</a>
                 </div>
-                <img src="img/header.png" alt="icon" class="header__image">
+                <div class="header__primary">
+                    <div class="header__info info">
+
+                        <div class="info__body">
+                            <h1 class="header__title">
+                                Denis<br>Novik
+                            </h1>
+                            <span class="header__text">
+                                UX | UI designer <br>
+                                24 years old, Minsk
+                            </span>
+                        </div>
+                        <a href="#" class="menu-burger"><img src="img/burger.svg" alt="icon" class="info__image"></a>
+
+
+                        <div class="header__language language">
+                            <a href="#" class="language__link">RU</a>
+                            <a href="#" class="language__link">ENG</a>
+                        </div>
+
+                    </div>
+                    <img src="img/header.png" alt="icon" id="img-x" class="header__image ">
+                </div>
             </div>
         </header>
 
-        <main class="main">
-            <section class="main__about about">
-                <h2 class="main__title title">About me</h2>
-                <p class="main__description descriprion">
-                    Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it.
-                </p>
-                <p class="main__description descriprion">
-                    I'm studying at courses "Web and mobile design <br> interfaces" in IT-Academy.
-                </p>
-                <p class="main__description descriprion">Ready to implement excellent projects<br> with wonderful people.
-                </p>
+        <main class="main ">
+            <section class="main__about about ">
+                <div class="container ">
+                    <h2 class="main__title title ">About me</h2>
+                    <p class="main__description descriprion ">
+                        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+                    </p>
+                    <p class="main__description descriprion ">
+                        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+                    </p>
+                    <p class="main__description descriprion">Ready to implement excellent projects with wonderful people.
+                    </p>
+                </div>
+
             </section>
+
+
             <section class="main__skills skills">
                 <h2 class="main__title title">Skills</h2>
                 <p class="descriprion">I work in such programs as</p>
 
-                <div class="main__editor">
+                <div class="main__editor editor">
                     <div class="main__column">
-                        <img class="main__image" src="img/photoshop.svg" alt="icon">
-                        <span class="main__text text">Adobe <br> Photoshop</span>
+                        <div class="editor__body">
+                            <img class="main__image" src="img/photoshop.svg" alt="icon">
+                            <span class="main__text text">Adobe <br> Photoshop</span>
+                        </div>
                         <div class="main__rating rating">
                             <img src="img/star-hover.svg" alt="star">
                             <img src="img/star-hover.svg" alt="star">
@@ -70,8 +86,10 @@
                         </div>
                     </div>
                     <div class="main__column">
-                        <img class="main__image" src="img/illustrator.svg" alt="icon">
-                        <span class="main__text text">Adobe<br> Illustrator</span>
+                        <div class="editor__body">
+                            <img class="main__image" src="img/illustrator.svg" alt="icon">
+                            <span class="main__text text">Adobe<br> Illustrator</span>
+                        </div>
                         <div class="main__rating rating"><img src="" alt="">
                             <img src="img/star-hover.svg" alt="star">
                             <img src="img/star-hover.svg" alt="star">
@@ -81,8 +99,10 @@
                         </div>
                     </div>
                     <div class="main__column">
-                        <img class="main__image" src="img/after-effects.svg" alt="icon">
-                        <span class="main__text text">Adobe<br> After Effects</span>
+                        <div class="editor__body">
+                            <img class="main__image" src="img/after-effects.svg" alt="icon">
+                            <span class="main__text text">Adobe<br> After Effects</span>
+                        </div>
                         <div class="main__rating rating">
                             <img src="img/star-hover.svg" alt="star">
                             <img src="img/star-hover.svg" alt="star">
@@ -92,8 +112,10 @@
                         </div>
                     </div>
                     <div class="main__column">
-                        <img class="main__image" src="img/figma.svg" alt="icon">
-                        <span class="main__text text">Figma</span>
+                        <div class="editor__body">
+                            <img class="main__image" src="img/figma.svg" alt="icon">
+                            <span class="main__text text">Figma</span>
+                        </div>
                         <div class="main__rating rating">
                             <img src="img/star-hover.svg" alt="star">
                             <img src="img/star-hover.svg" alt="star">
@@ -123,6 +145,8 @@
                     <a href="#" class="portfolio__description descriprion">Braun Landing Page - Concept</a>
                 </div>
             </section>
+
+
         </main>
 
         <footer class="footer">
@@ -145,6 +169,7 @@
         </footer>
     </div>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

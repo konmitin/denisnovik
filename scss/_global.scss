@@ -4,14 +4,14 @@ $ff: "Gilroy-Bold";
 * {
     text-decoration: none;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Gilroy-Medium", sans-serif;
     font-size: 18px;
     line-height: 22px;
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -20,7 +20,12 @@ a {
 }
 
 .container {
+    max-width: 1440px;
+    padding: 0px 30px;
     margin: auto;
+    @media (max-width: 475px) {
+        padding: 0 30px;
+    }
 }
 
 .about,
