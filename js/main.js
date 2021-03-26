@@ -13,3 +13,18 @@ function changeImage() {
 
     }
 }
+
+// Создаю меню бургер
+
+let menuBurger = document.querySelector('#menuBurger');
+let headerNav = document.querySelector('#headerNav');
+let body = document.querySelector('body');
+
+menuBurger.addEventListener('click', () => {
+
+    menuBurger.classList.toggle('active');
+    headerNav.classList.toggle('active');
+
+    // Отключил прокрутку страницы
+    body.classList.toggle('disable-scroll');
+});

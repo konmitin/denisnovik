@@ -17,7 +17,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__nav nav">
+                <div id="headerNav" class="header__nav nav">
                     <a href="#" class="nav__link">Home</a>
                     <a href="#" class="nav__link">About me</a>
                     <a href="#" class="nav__link">Skills</a>
@@ -36,7 +36,10 @@
                                 24 years old, Minsk
                             </span>
                         </div>
-                        <a href="#" class="menu-burger"><img src="img/burger.svg" alt="icon" class="info__image"></a>
+                        <div id="menuBurger" class="menu-burger">
+                            <span></span>
+                        </div>
+
 
 
                         <div class="header__language language">
@@ -68,81 +71,87 @@
 
 
             <section class="main__skills skills">
-                <h2 class="main__title title">Skills</h2>
-                <p class="descriprion">I work in such programs as</p>
+                <div class="container">
+                    <h2 class="main__title title">Skills</h2>
+                    <p class="descriprion">I work in such programs as</p>
 
-                <div class="main__editor editor">
-                    <div class="main__column">
-                        <div class="editor__body">
-                            <img class="main__image" src="img/photoshop.svg" alt="icon">
-                            <span class="main__text text">Adobe <br> Photoshop</span>
+                    <div class="main__editor editor">
+                        <div class="main__column">
+                            <div class="editor__body">
+                                <img class="main__image" src="img/photoshop.svg" alt="icon">
+                                <span class="main__text text">Adobe <br> Photoshop</span>
+                            </div>
+                            <div class="main__rating rating">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
                         </div>
-                        <div class="main__rating rating">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                        <div class="main__column">
+                            <div class="editor__body">
+                                <img class="main__image" src="img/illustrator.svg" alt="icon">
+                                <span class="main__text text">Adobe<br> Illustrator</span>
+                            </div>
+                            <div class="main__rating rating"><img src="" alt="">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                        </div>
+                        <div class="main__column">
+                            <div class="editor__body">
+                                <img class="main__image" src="img/after-effects.svg" alt="icon">
+                                <span class="main__text text">Adobe<br> After Effects</span>
+                            </div>
+                            <div class="main__rating rating">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
+                        </div>
+                        <div class="main__column">
+                            <div class="editor__body">
+                                <img class="main__image" src="img/figma.svg" alt="icon">
+                                <span class="main__text text">Figma</span>
+                            </div>
+                            <div class="main__rating rating">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star-hover.svg" alt="star">
+                                <img src="img/star.svg" alt="star">
+                            </div>
                         </div>
                     </div>
-                    <div class="main__column">
-                        <div class="editor__body">
-                            <img class="main__image" src="img/illustrator.svg" alt="icon">
-                            <span class="main__text text">Adobe<br> Illustrator</span>
-                        </div>
-                        <div class="main__rating rating"><img src="" alt="">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                        </div>
-                    </div>
-                    <div class="main__column">
-                        <div class="editor__body">
-                            <img class="main__image" src="img/after-effects.svg" alt="icon">
-                            <span class="main__text text">Adobe<br> After Effects</span>
-                        </div>
-                        <div class="main__rating rating">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                        </div>
-                    </div>
-                    <div class="main__column">
-                        <div class="editor__body">
-                            <img class="main__image" src="img/figma.svg" alt="icon">
-                            <span class="main__text text">Figma</span>
-                        </div>
-                        <div class="main__rating rating">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star-hover.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                        </div>
-                    </div>
+
 
 
 
                 </div>
 
             </section>
+
             <section class="main__portfolio portfolio">
-                <h2 class="portfolio__title title">Portfolio</h2>
-                <div class="portfolio__post">
-                    <img src="img/1_post.png" alt="post-image" class="portfolio__image image">
-                    <a href="#" class="portfolio__description descriprion">Online fashion store - Homepage</a>
-                </div>
-                <div class="portfolio__post">
-                    <img src="img/2_post.png" alt="post-image" class="portfolio__image image">
-                    <a href="#" class="portfolio__description descriprion">Reebok Store - Concept</a>
-                </div>
-                <div class="portfolio__post">
-                    <img src="img/3_post.png" alt="post-image" class="portfolio__image image">
-                    <a href="#" class="portfolio__description descriprion">Braun Landing Page - Concept</a>
+                <div class="container">
+                    <h2 class="portfolio__title title">Portfolio</h2>
+                    <div class="portfolio__post">
+                        <img src="img/1_post.png" alt="post-image" class="portfolio__image image">
+                        <a href="#" class="portfolio__description descriprion">Online fashion store - Homepage</a>
+                    </div>
+                    <div class="portfolio__post">
+                        <img src="img/2_post.png" alt="post-image" class="portfolio__image image">
+                        <a href="#" class="portfolio__description descriprion">Reebok Store - Concept</a>
+                    </div>
+                    <div class="portfolio__post">
+                        <img src="img/3_post.png" alt="post-image" class="portfolio__image image">
+                        <a href="#" class="portfolio__description descriprion">Braun Landing Page - Concept</a>
+                    </div>
                 </div>
             </section>
 

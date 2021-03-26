@@ -66,10 +66,16 @@
         color: $color_2;
     }
     @media (max-width: 475px) {
+        width: 100%;
+        margin-left: -120%;
+        z-index: 100;
+        height: 100%;
         flex-direction: column;
         align-items: flex-start;
-        display: none;
-        visibility: hidden;
+        position: fixed;
+        padding-top: 67px;
+        background: #fff;
+        transition: all 1.0s;
         &__link {
             font-size: 34px;
             line-height: 42px;
@@ -78,16 +84,62 @@
         &::before {
             display: none;
         }
+        &.active {
+            margin: 0;
+        }
     }
 }
 
 .menu-burger {
     display: none;
     visibility: hidden;
+    z-index: 101;
     @media (max-width: 475px) {
-        display: flex;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
         visibility: visible;
-        margin-top: 15px;
+        margin-top: 17px;
+        span {
+            position: absolute;
+            width: 100%;
+            background: $color_2;
+            height: 2px;
+            left: 0;
+            top: 9px;
+            transition: all 0.7s;
+        }
+        &::before,
+        &::after {
+            content: '';
+            width: 100%;
+            left: 0;
+            position: absolute;
+            height: 2px;
+            background: $color_2;
+            transition: all 0.7s;
+        }
+        &::after {
+            top: 0;
+        }
+        &.active span {
+            transform: scale(0);
+            background: $primaryC;
+        }
+        &::before {
+            bottom: 0;
+        }
+        &.active::after {
+            transform: rotate(45deg);
+            top: 9px;
+            background: $primaryC;
+        }
+        &.active::before {
+            transform: rotate(-45deg);
+            bottom: 9px;
+            background: $primaryC;
+        }
     }
 }
 
