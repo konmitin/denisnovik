@@ -242,6 +242,7 @@ a {
     padding-top: 67px;
     background: #fff;
     -webkit-transition: all 0.7s;
+    overflow: auto;
     transition: all 0.7s;
     overflow: auto;
   }
