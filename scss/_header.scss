@@ -85,10 +85,12 @@
         height: 100%;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: start;
         position: fixed;
         padding-top: 67px;
         background: #fff;
         transition: all 0.7s;
+        overflow: auto;
         &__link {
             font-size: 34px;
             line-height: 42px;

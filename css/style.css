@@ -235,11 +235,15 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     position: fixed;
     padding-top: 67px;
     background: #fff;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
+    overflow: auto;
   }
   .nav__link {
     font-size: 34px;
