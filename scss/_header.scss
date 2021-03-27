@@ -89,6 +89,7 @@
         position: fixed;
         padding-top: 67px;
         background: #fff;
+       overflow: auto;
         transition: all 0.7s;
         &__link {
             font-size: 34px;
