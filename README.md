@@ -1,4 +1,4 @@
-# Denisnovik Landing Page Portfolio
+# Denisnovik. Landing Page Portfolio
 ### Верстка обучающего макета. Landing Page
 
 Ссылка на сайт https://konmit.github.io/denisnovik/
